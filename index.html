@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Metadata Forensics Suite BETA</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/exifreader/dist/exif-reader.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+<header>
+<h1>Metadata Forensics Suite BETA</h1>
+<p>
+Advanced forensic metadata analyzer with AI provenance inspection,
+chunk parsing, forensic hashes and metadata cleaning.
+</p>
+</header>
+
+<section class="upload" id="dropZone">
+
+<input type="file" id="fileInput" multiple hidden>
+
+<div class="upload-content">
+
+<h2>Drop Files Here</h2>
+
+<p>
+PNG · JPG · WEBP · HEIC
+</p>
+
+<button id="browseBtn">
+Select Files
+</button>
+
+</div>
+
+</section>
+
+<section class="toolbar">
+
+<button id="downloadAll">
+Download Clean ZIP
+</button>
+
+<button id="clearAll">
+Clear Session
+</button>
+
+</section>
+
+<section id="results"></section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
